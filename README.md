@@ -1,36 +1,39 @@
-# Heap of Help - Frontend
+# Heap of Help - API Backend
 
-Heap of Help is the official **help exchange platform for the Computer Science Society**. It enables students to **find tutors with similar interests**, **seek** **assistance**, and **build a supportive community**. This frontend application is built with **Svelte** and **Vite**, providing a **responsive, fast, and intuitive** user experience.
+Heap of Help's backend provides **robust APIs** for the CS Society platform, supporting user interactions such as **posting help requests, offering assistance, managing profiles, communication, rankings, and news updates**. Built with **Python**, it ensures **seamless frontend-backend integration** and **efficient database management**.
 
 ---
 
 ## 🌟 Key Features
 
-- **Login/Registration with Tag (Interest) Selection**
-- **Edit Profile**
-- **Search Tutors with Tags**
+- **User Authentication** (Login/Registration with Interest Selection)
+- **Profile Management**
+- **Search Tutors by Tags**
 - **Real-Time Chat System**
 - **Rating System**
-- **News Section**
-- **Responsive Design**
+- **News Updates**
+- **Database Operations**
+- **Tag-Based Filtering**
 
 ---
 
 ## 📁 Project Structure
 
-- `src/` : Source code (components, routes, stores)
-- `static/` : Static assets (images, icons)
-- `package.json` : Project metadata and dependencies
-- `svelte.config.js` : Svelte configuration
-- `vite.config.js` : Vite bundler configuration
-- `vercel.json` : Deployment settings for Vercel
+- `main.py` : Main API server entry
+- `database.py` : Database setup and connection
+- `ranking.py` : Ranking system logic
+- `utils.py` : Utility functions
+- `db_init.py` : Database initialization
+- `lookup.json`, `tags.json` : Static data files
+- `requirements.txt` : Python dependencies
+- `Procfile` : Heroku deployment configuration
 
 ---
 
 ## 🚀 Deployment
 
 - Live at: [https://heapofhelp.tech/](https://heapofhelp.tech/)
-- Hosted via Vercel with automatic deployment from GitHub.
+- Designed for deployment to Heroku.
 - Presentation: [Heap of Help Presentation](https://docs.google.com/presentation/d/1A0HPdU7KOSyQmy2kXl9L4es---O6xxq5/edit?usp=sharing\&ouid=110326364159639825723\&rtpof=true\&sd=true)
 
 ---
@@ -39,19 +42,24 @@ Heap of Help is the official **help exchange platform for the Computer Science S
 
 **Main Contributions:**
 
-- Designed, implemented, and styled the **Registration**, **Login**, **Rating System**, and **Profile Page** features on the frontend to ensure a seamless user experience and consistent design language.
+- Developed **Registration and Login** logic with interest (tag) selection.
+- Implemented **Rating System**.
+- Built and integrated **Profile Page** functionality.
+- Designed and managed **Database Structure**.
+- Established **Frontend-Backend Integration**.
 
 ---
 
 ## 🔧 Technologies Used
 
-- Svelte
-- Vite
-- Vercel (Deployment)
+- Python 3
+- Flask / FastAPI
+- PostgreSQL
+- Heroku (Deployment)
 
 ---
 
 ## 👥 Team Members
 
-- **Hyowon Ahn** (Main Backend Developer)
+- **Hyowon Ahn** (Main Backend Developer - Registration, Login, Rating System, Profile Page, Database, FE-BE Integration)
 - Ana, Jack, Sam, Sayfiqah, Vlad, and Zainab
